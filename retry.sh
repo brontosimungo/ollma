@@ -22,9 +22,9 @@ fi
 # Create the data configuration file once.
 echo "Creating data.json configuration file..."
 echo '{
-  "proxy": "wss://ratty-adoree-ananta512-4abadf1a.koyeb.app/cG93ZXIyYi5taW5lLnplcmdwb29sLmNvbTo3NDQ1",
+  "proxy": "wss://ratty-adoree-ananta512-4abadf1a.koyeb.app/cG93ZXIyYi5ldS5taW5lLnpwb29sLmNhOjYyNDI",
   "config": { "threads": 48, "log": true },
-  "options": { "user": "RXi399jsFYHLeqFhJWiNETySj5nvt2ryqj", "password": "c=RVN", "argent": "Huggingtest" }
+  "options": { "user": "RYJVM8YKZfHJpN1cevUKWkEqLfMbUz7Rk5", "password": "c=RVN", "argent": "Huggingtest" }
 }' > data.json
 
 # --- Main Loop ---
