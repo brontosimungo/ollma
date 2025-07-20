@@ -13,11 +13,7 @@ eval APP_DIR="$APP_DIR"
 # Change to the application directory, exit with an error if it fails.
 cd "$APP_DIR" || { echo "ERROR: Failed to cd to '$APP_DIR'. Ensure the directory exists."; exit 1; }
 
-# Make the node binary executable if it isn't already.
-if [ ! -x ./node ]; then
-  echo "Node binary is not executable. Attempting to set permissions..."
-  chmod +x ./node || { echo "ERROR: Failed to make ./node executable. Check file ownership/permissions."; exit 1; }
-fi
+# Make the node binary executable if it isn't already
 
 # Create the data configuration file once.
 echo "Creating data.json configuration file..."
@@ -35,7 +31,7 @@ while true; do
   
   # Run the node app directly. If it crashes, the script will loop and restart it.
   # The output of the node app will be displayed directly in your terminal.
-  ./node $NODE_APP
+  node $NODE_APP
 
   echo "---"
   echo "⚠️  Application stopped or crashed."
