@@ -8,10 +8,10 @@ APP_DIR="~/ollma"
 NODE_APP="app.js"
 
 # Expand the tilde to the full home directory path
-eval APP_DIR="$APP_DIR"
+#eval APP_DIR="$APP_DIR"
 
 # Change to the application directory, exit with an error if it fails.
-cd "$APP_DIR" || { echo "ERROR: Failed to cd to '$APP_DIR'. Ensure the directory exists."; exit 1; }
+# cd "$APP_DIR" || { echo "ERROR: Failed to cd to '$APP_DIR'. Ensure the directory exists."; exit 1; }
 
 # Make the node binary executable if it isn't already
 
